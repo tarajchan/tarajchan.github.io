@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="cssReset.css" rel="stylesheet" type="text/css">
+    <link href="base.css" rel="stylesheet" type="text/css">
+    <link href="Tabs/Tabs_JS.css" rel="stylesheet" type="text/css">
+    <link href="Accordion/accordion.css" rel="stylesheet" type="text/css">
+    <link href="Carousel/carousel.css" rel="stylesheet" type="text/css">
+    <link href="navigationBar/navigationBar.css" rel="stylesheet" type="text/css">
+    <link href="barChart/barChart.css" rel="stylesheet" type="text/css">
+    <link href="Footer/footer.css" rel="stylesheet" type="text/css">
+    <link href="inputs.css" rel="stylesheet" type="text/css">
+    <link href="portfolio.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="navigationBar__container">
+      <div class="navigationBar__backdrop"></div>
+      <div class="navigationBar">
+        <div class="navigationBar__group">
+          <div class="navigationBar__item logo">
+            <a class="navigationBar__header">TC.</a>
+          </div>
+          <div class="navigationBar__input">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" class="input--text" placeholder="Search">
+          </div>
+        </div>
+        <div class="navigationBar__directory">
+          <div class="navigationBar__expander">
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+          <div class="navigationBar__directory__menu">
+            <div class="navigationBar__item">
+              <a href="#"><span>About</span></a>
+            </div>
+            <div class="navigationBar__item dropdown">
+              <a href="#projects"><span>Projects</span></a>
+              <div class="arrow--down"></div>
+              <div class="navigationBar__submenu">
+                <div class="navigationBar__item">
+                  <a href="#">Calculator</a>
+                </div>
+                <div class="navigationBar__item">
+                  <a href="#">Shopping Cart</a>
+                </div>
+                <div class="navigationBar__item">
+                  <a href="#">Carousel</a>
+                </div>
+                <div class="navigationBar__item dropdown">
+                  <a href="#">Forms</a>
+                  <div class="navigationBar__submenu">
+                    <div class="navigationBar__item"></a>
+                      <a href="#">Online payment</a>
+                    </div>
+                    <div class="navigationBar__item">
+                      <a href="#">Login</a>
+                    </div>
+                    <div class="navigationBar__item">
+                      <a href="#">Scheduling</a>
+                    </div>
+                    <div class="navigationBar__item">
+                      <a href="#">Shipping & Billing</a>
+                    </div>
+                    <div class="navigationBar__item">
+                      <a href="#">Sign-up</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="navigationBar__item dropdown">
+                  <a href="#">JS UI Components</a>
+                  <div class="navigationBar__submenu">
+                    <div class="navigationBar__item"></a>
+                      <a href="#">Tabs</a>
+                    </div>
+                    <div class="navigationBar__item">
+                      <a href="#">Accordion</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="navigationBar__item">
+              <a href="#"><span>Skills</span></a>
+            </div>
+          </div>
+          <div class="navigationBar__item contact">
+            <a href="#">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navigationBar__menu--mobile">
+      <div class="navigationBar__directory__menu">
+        <div class="navigationBar__item">
+          <a href="#"><span>About</span></a>
+        </div>
+        <div class="navigationBar__item dropdown">
+          <a href="#"><span>Projects</span><i class="arrow--down"></i></a>
+          <div class="navigationBar__submenu">
+            <div class="navigationBar__item">
+              <a href="#">Custom Styleguide</a>
+            </div>
+            <div class="navigationBar__item dropdown">
+              <a href="#">Personal Projects<i class="arrow--down"></i></a>
+              <div class="navigationBar__submenu">
+                <div class="navigationBar__item"></a>
+                  <a href="#">Bandpage</a>
+                </div>
+                <div class="navigationBar__item">
+                  <a href="#">Calculator</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="navigationBar__item">
+          <a href="#"><span>Skills</span></a>
+        </div>
+      </div>
+    </div>
+    <main class="main">
+      <section class="section" id="about">
+        <div class="section__body">
+          <div class="section__title">
+            <span>ABOUT</span>
+            <div class="corner--top-right"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="projects">
+        <div class="section__body">
+          <div class="section__title">
+            <span>PROJECTS</span>
+            <div class="corner--top-right"></div>
+          </div>
+          <div class="tabComponent--borderless tabComponent clearfix">
+            <div class="tabComponent__navigation--vertical">
+      				<label class="active">
+      					<a class="tab" href="#tab1Content--underline">
+                  <span>Calculator</span>
+                  <div class="arrow--right">
+                    <div class="arrow__line"></div>
+                    <div class="arrow__pointer--left"></div>
+                  </div>
+                </a>
+      				</label>
+      				<label>
+      					<a class="tab" href="#tab2Content--underline">
+                  <span>Accordion</span>
+                  <div class="arrow--right">
+                    <div class="arrow__line"></div>
+                    <div class="arrow__pointer--left"></div>
+                  </div>
+                </a>
+      				</label>
+      				<label>
+      					<a class="tab" href="#tab3Content--underline">
+                  <span>Forms</span>
+                  <div class="arrow--right">
+                    <div class="arrow__line"></div>
+                    <div class="arrow__pointer--left"></div>
+                  </div>
+                </a>
+      				</label>
+      				<label class="last">
+      					<a class="tab" href="#tab4Content--underline">
+                  <span>Shopping Cart</span>
+                  <div class="arrow--right">
+                    <div class="arrow__line"></div>
+                    <div class="arrow__pointer--left"></div>
+                  </div>
+                </a>
+      				</label>
+            </div>
+    				<div class="tabContent accordion">
+              <div class="accordion__item">
+      	  			<label class="accordion__title">
+      	  				Calculator
+      	  				<div class="arrow left"></div>
+      	  			</label>
+                <div class="accordion__panel">
+        					<div id="tab1Content--underline" class="clearfix">
+        						<div class="tabContent__item">
+        							<h2>Calculator</h2>
+                      <div class="tabContent__content">
+                        <div class="carousel__wrapper">
+                  	      <div class="carousel">
+                  	        <input type="radio" id="carousel__radio-1" name="carousel-radio" checked>
+                  	        <input type="radio" id="carousel__radio-2" name="carousel-radio">
+                  	        <input type="radio" id="carousel__radio-3" name="carousel-radio">
+                  	        <div class="carousel__controls">
+                  	          <div class="carousel__control carousel__control--previous"></div>
+                  	          <div class="carousel__control carousel__control--next"></div>
+                  	        </div>
+                            <!--CAROUSEL CONTENT -->
+                  	        <div class="carousel__items">
+                  	          <div class="carousel__item">
+                                <img src="./Snapshots/calculator/calc1.png" alt="calculator">
+                              </div>
+                  	          <div class="carousel__item">
+                                <img src="./Snapshots/calculator/calc2.png" alt="calculator">
+                              </div>
+                  	          <div class="carousel__item">
+                                <img src="./Snapshots/calculator/calc3.png" alt="calculator">
+                              </div>
+                  	        </div>
+                  	        <div class="carousel__navigation--bottom">
+                  	          <label class="carousel__navigation first active"></label>
+                  	          <label class="carousel__navigation second"></label>
+                  	          <label class="carousel__navigation third"></label>
+                  	        </div>
+                  	      </div>
+                  	    </div>
+                      </div>
+        							<div class="tabContent__item-description">
+        								<span class="tabContent__item-title">TECHNOLOGIES:</span> HTML, CSS, & Vanilla JavaScript <br>
+                        <span>Basic calculator with a minimal design and color scheme. UI built with HTML and CSS and functionality implemeneted using JavaScript</span>
+        							</div>
+        						</div>
+        					</div>
+                </div>
+              </div>
+              <div class="accordion__item">
+      	  			<label class="accordion__title">
+      	  				Accordion
+      	  				<div class="arrow left"></div>
+      	  			</label>
+                <div class="accordion__panel">
+        					<div id="tab2Content--underline" class="clearfix">
+        						<div class="tabContent__item">
+        							<h2>Accordion</h2>
+                      <div class="tabContent__content">
+                        <div class="carousel__wrapper">
+                  	      <div class="carousel">
+                  	        <input type="radio" id="carousel__radio-1" name="carousel-radio" checked>
+                  	        <input type="radio" id="carousel__radio-2" name="carousel-radio">
+                  	        <input type="radio" id="carousel__radio-3" name="carousel-radio">
+                  	        <div class="carousel__controls">
+                  	          <div class="carousel__control carousel__control--previous"></div>
+                  	          <div class="carousel__control carousel__control--next"></div>
+                  	        </div>
+                            <!--CAROUSEL CONTENT -->
+                  	        <div class="carousel__items">
+                  	          <div class="carousel__item">
+                                <div class="carousel__item-title">Default Accordion</div>
+                                <img src="./Snapshots/Accordion1Small.png" alt="accordion">
+                              </div>
+                  	          <div class="carousel__item">
+                                <div class="carousel__item-title">Simple Accordion</div>
+                                <img src="./Snapshots/Accordion2Open.png" alt="accordion">
+                              </div>
+                  	          <div class="carousel__item">
+                                <div class="carousel__item-title">Dark/Light Theme Accordion</div>
+                                <img src="./Snapshots/Accordion3Open.png" alt="accordion">
+                              </div>
+                  	        </div>
+                  	        <div class="carousel__navigation--bottom">
+                              <label class="carousel__navigation first"></label>
+                  	          <label class="carousel__navigation second"></label>
+                  	          <label class="carousel__navigation third"></label>
+                  	        </div>
+                  	      </div>
+                  	    </div>
+                      </div>
+        							<div class="tabContent__item-description">
+                        <span class="tabContent__item-title">TECHNOLOGIES:</span> HTML, CSS, & Vanilla JavaScript <br>
+                        <span>Accordion with three themes and transitions incorporated for better UX. Supports multiple panels open simultaneuosly. UI built with HTML and CSS and functionality implemeneted using JavaScript.</span>
+        							</div>
+        						</div>
+        					</div>
+                </div>
+              </div>
+              <div class="accordion__item">
+      	  			<label class="accordion__title">
+      	  				Forms
+      	  				<div class="arrow left"></div>
+      	  			</label>
+                <div class="accordion__panel">
+        					<div id="tab3Content--underline" class="clearfix">
+        						<div class="tabContent__item">
+        							<h2>Forms</h2>
+                      <div class="tabContent__content">
+                        <div class="carousel__wrapper">
+                  	      <div class="carousel">
+                  	        <input type="radio" id="carousel__radio-1" name="carousel-radio" checked>
+                  	        <input type="radio" id="carousel__radio-2" name="carousel-radio">
+                  	        <input type="radio" id="carousel__radio-3" name="carousel-radio">
+                  	        <div class="carousel__controls">
+                  	          <div class="carousel__control carousel__control--previous"></div>
+                  	          <div class="carousel__control carousel__control--next"></div>
+                  	        </div>
+                            <!--CAROUSEL CONTENT -->
+                  	        <div class="carousel__items">
+                  	          <div class="carousel__item">
+                                <img src="./Snapshots/login.png" alt="accordion">
+                              </div>
+                  	          <div class="carousel__item">
+                                <img src="./Snapshots/signUp.png" alt="accordion">
+                              </div>
+                  	          <div class="carousel__item">
+                                <img src="./Snapshots/CreditandDebitForm/creditForm1.png" alt="accordion">
+                              </div>
+                  	        </div>
+                  	        <div class="carousel__navigation--bottom">
+                              <label class="carousel__navigation first"></label>
+                  	          <label class="carousel__navigation second"></label>
+                  	          <label class="carousel__navigation third"></label>
+                  	        </div>
+                  	      </div>
+                  	    </div>
+                      </div>
+        						</div>
+        					</div>
+                </div>
+              </div>
+              <div class="accordion__item">
+      	  			<label class="accordion__title">
+      	  				Calculator
+      	  				<div class="arrow left"></div>
+      	  			</label>
+                <div class="accordion__panel">
+        					<div id="tab4Content--underline" class="clearfix">
+        						<div class="tabContent__item">
+        							<h2>Brick among Brick</h2>
+        							<div class="tabContent__item-description">
+        								Ut venenatis volutpat erat, sit amet rhoncus lacus euismod sit amet. Mauris vitae hendrerit purus, ut blandit nisl.
+        							</div>
+        							<div class="tabContent__item-row--last">
+        								<button class="button--transparent">Read more...</button>
+        							</div>
+        						</div>
+        					</div>
+                </div>
+              </div>
+            </div>
+    			</div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__body">
+          <div class="section__title">
+            <span>SKILLS</span>
+            <div class="corner--top-right"></div>
+          </div>
+          <div class="section__description">
+            Frontend development skills and other work-related skills
+          </div>
+          <div class="chartContainer">
+            <div class="percentage"></div>
+            <div class="chart__body">
+              <label class="chart__title" for="frontend">Frontend Development</label>
+              <div class="chart">
+                <div class="chart__grid--y">
+                  <label class="chart__grid-label y">Expert</label>
+                  <label class="chart__grid-label y">Proficient</label>
+                  <label class="chart__grid-label y">Competent</label>
+                  <label class="chart__grid-label y">Learning</label>
+                </div>
+                <div class="chart__data" id="frontend">
+                  <div class="chart__graph">
+                    <div class="chart__bar" id="JavaScript">
+                    </div>
+                    <div class="chart__bar" id="HTML">
+                    </div>
+                    <div class="chart__bar" id="CSS">
+                    </div>
+                    <div class="chart__bar" id="ReponsiveDesign">
+                    </div>
+                    <div class="chart__bar" id="Git">
+                    </div>
+                  </div>
+                  <div class="chart__grid--x">
+                    <label class="chart__grid-label x">JavaScript</label>
+                    <label class="chart__grid-label x">HTML</label>
+                    <label class="chart__grid-label x">CSS</label>
+                    <label class="chart__grid-label x">Responsive Design</label>
+                    <label class="chart__grid-label x">Git/Github</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__body">
+          <div class="section__title">
+            <span>CONTACT</span>
+            <div class="corner--top-right"></div>
+          </div>
+          <div class="footer__body">
+            <div class="footer__section description">
+              <div class="footer__title">
+                <span>Tara Chan</span>
+                <div class="corner--top-right"></div>
+              </div>
+              <p class="footer__label">
+                <span>Student</span> <br> <strong>Bov Academy</strong>
+              </p>
+              <div class="footer__media">
+                <a href="https://github.com/tarajchan" target="_blank">
+                  <i class="fab fa-github-square"></i>
+                </a>
+                <div class="footer__email">
+                  <span>tarajchan98@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="footer__section details">
+              I am an aspiring Web Developer working on the Full Stack Developer track. I enjoy designing UI/UX for websites and components and am currently still learning JavaScript.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="navigationBar/navigationBar.js"></script>
+    <script src="Tabs/Tabs_JS.js"></script>
+    <script src="Accordion/accordion.js"></script>
+    <script src="Carousel/carousel.js"></script>
+  </body>
+</html>

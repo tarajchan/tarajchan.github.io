@@ -1,0 +1,460 @@
+@import "../Fonts/fonts.css";
+
+label {
+	transition: 0.25s ease-in-out;
+}
+
+.button--transparent {
+  background: transparent;
+  font-family: "Raleway Light";
+  font-size: 1.15rem;
+  font-weight: 600;
+  padding: 0.75rem 1.25rem;
+  border: 0.1rem solid black;
+  border-radius: 0.35rem;
+  outline: none;
+  width: auto;
+  height: auto;
+  margin: 0;
+  color: black;
+  transition: 0.3s ease-in-out;
+}
+
+.button--transparent:hover {
+	background: #0000000f;
+	box-shadow: 0.15rem 0.25rem 0.5rem #0000002e;
+	cursor: pointer;
+	opacity: 0.75;
+}
+
+.clearfix {
+	zoom: 1; /*IE 6/7*/
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.clearfix:after,
+.clearfix:before {
+ content: "";
+ display: table;
+}
+
+.date {
+	font-family: "Raleway Bold";
+	font-size: 1.25rem;
+	opacity: 0.5;
+}
+
+.tab__border-bottom {
+	position: absolute;
+	bottom: -0.15rem;
+	left: 0;
+	right: 0;
+	height: 1rem;
+	border-bottom: 0.15rem solid white;
+}
+
+.tab__title--skew {
+	display: inline-block;
+	transform: skewX(-15deg);
+}
+
+.tabComponent {
+	max-width: 90rem;
+	margin-top: 1rem;
+  box-shadow: -0.25rem 0.5rem 0.75rem #e0e0e0;
+}
+
+.tabComponent p {
+	font-family: "Playfair Display Regular";
+	font-size: 1rem;
+	font-weight: 600;
+	margin: 0.5rem 0;
+}
+
+.tabComponent h2 {
+	padding: 0.5rem 0 1rem;
+	margin-bottom: 0;
+	font-family: "Playfair Display Bold";
+	font-size: 2.5rem;
+	line-height: 2.618rem;
+	color: #177693;
+  letter-spacing: 0.075rem;
+  text-shadow: 0.25rem 0.15rem 0.15rem #e2e2e2;
+}
+
+.tabComponent label {
+	position: relative;
+	float: left;
+	transition: transform 0.25s ease-in-out;
+	border-top-right-radius: 0.25rem;
+}
+
+.tabComponent label .tab {
+  display: flex;
+  align-items: center;
+	height: 100%;
+  font-family: "Playfair Display Bold";
+  text-decoration: none;
+}
+
+.section:first-child .tabComponent label .tab {
+	color: white;
+	padding: 1.75rem 4.25rem 1.25rem;
+}
+
+..section:first-child .tabComponent label.first {
+	border-top-left-radius: 0.25rem;
+	border-top-right-radius: 0.25rem;
+}
+
+.tabComponent label a:hover {
+	cursor: pointer;
+}
+
+.tabComponent input[type="radio"] {
+	display: none;
+}
+
+.tabComponent--borderless {
+	box-shadow: none;
+	border-bottom: 0.35rem solid #18AFC7;
+  border-radius: 0;
+}
+
+.tabComponent--borderless .tabContent {
+	border: 0;
+	margin-top: 3rem;
+	border-radius: 0;
+}
+
+.tabComponent--borderless label {
+	margin-right: 0.5rem;
+  z-index: 2;
+}
+
+.tabComponent--borderless label .tab {
+	border: 0;
+  box-shadow: none;
+  padding: 0.75rem 0;
+  width: 10.75rem;
+  background: white;
+  color: #808080a1;
+  font-size: 1.25rem;
+}
+
+.tabComponent--borderless label .tab__border-bottom {
+	background-color: #808080a1;
+	border: 0;
+	height: 0.3rem;
+}
+
+.tabComponent--borderless label:hover .tab {
+	color: #909090;
+}
+
+.tabComponent--borderless label:hover .tab__border-bottom {
+	background-color: #909090;
+}
+
+.tabComponent--borderless label.active .tab {
+	color: black;
+}
+
+.tabComponent--borderless label.active > .tab__border-bottom,
+.tabComponent--borderless label.active:hover > .tab__border-bottom {
+	background-color: #18AFC7;
+}
+
+.tabComponent--skew {
+	box-shadow: none;
+}
+
+.tabComponent--skew label {
+	position: relative;
+	border: 0.1rem solid #ABC0C8;
+  border-bottom: 0;
+  border-left: 0;
+  border-top-right-radius: 0.25rem;
+  margin: 1rem 0 0 1.25rem;
+  transform: skewX(15deg);
+}
+
+.tabComponent--skew label .tab {
+	color: #ABC0C8;
+	padding: 1.15rem 4.25rem;
+	transform: skewX(0deg);
+}
+
+.tabComponent--skew label.active {
+	border-color: #177D9A;
+}
+
+.tabComponent--skew label.active .tab {
+	color: #177D9A;
+}
+
+.tabComponent--skew .tabContent {
+	border: 0;
+	border-right: 0.05rem solid #18AFC7;
+  border-bottom: 0.05rem solid #18AFC7;
+}
+
+.tabContent {
+	position: relative;
+	background-color: white;
+	border: 0.05rem solid black;
+  margin-top: 4rem;
+  max-width: 60rem;
+  width: 100%;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  z-index: 1;
+}
+
+.tabContent .tabContent__item {
+	position: relative;
+}
+
+.tabContent .tabContent__item:first-child {
+	float: left;
+	height: 15rem;
+	width: 40%;
+}
+
+.tabContent .tabContent__item:nth-child(2) {
+	float: right;
+	width: 60%;
+	margin-top: 1.5rem;
+}
+
+.tabContent__item img {
+	position: absolute;
+	margin-top: 1.5rem;
+	height: 80%;
+	width: 90%;
+}
+
+.tabContent__item-description {
+  font-family: "Roboto Light";
+	font-size: 1.25rem;
+  line-height: 1.618rem;
+  margin-bottom: 0.25rem;
+  opacity: 0.75;
+}
+
+.tabContent__item-description > span:not(:first-child) {
+	display: inline-block;
+	margin-top: 1rem;
+	font-size: 1rem;
+}
+
+.tabContent__item-title {
+	font-family: "Barlow Condensed Regular";
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.tabContent__item-row--last {
+	display: flex;
+	justify-content: flex-end;
+	padding: 0.5rem 0;
+}
+
+#tab1 {
+	background: #177693;
+	color: white;
+  height: 4.75rem;
+  margin-top: -0.75rem;
+}
+
+#tab2 {
+  margin-top: -0.25rem;
+  height: 4.25rem;
+	background: #3B92AB;
+	color: white;
+}
+
+#tab3 {
+	height: 4rem;
+	background: #18AFC7;
+	color: white;
+}
+
+#tab4 {
+	margin-top: 0.25rem;
+	height: 3.75rem;
+	background: #46BBCE;
+	color: white;
+}
+
+#tab1:hover {
+	margin-top: -0.85rem;
+	height: 5rem;
+	opacity: 0.85;
+}
+
+#tab2:hover {
+	margin-top: -0.45rem;
+	height: 4.85rem;
+	opacity: 0.85;
+}
+
+#tab3:hover {
+	margin-top: -0.05rem;
+	height: 4.05rem;
+	opacity: 0.85;
+}
+
+#tab4:hover {
+	margin-top: 0.15rem;
+	height: 3.85rem;
+	opacity: 0.85;
+}
+
+#tab1.active,
+#tab2.active,
+#tab3.active,
+#tab4.active,
+#tab1.active:hover,
+#tab2.active:hover,
+#tab3.active:hover,
+#tab4.active:hover {
+  background-color: white;
+  height: 4.5rem;
+  margin-top: -0.5rem;
+  border: 0.05rem solid black;
+  border-top-left-radius: 0.25rem;
+	border-bottom: 0;
+  box-shadow: 0rem -0.25rem 0.25rem #f1f1f1;
+  z-index: 2;
+	opacity: 1;
+}
+
+#tab1.active .tab,
+#tab2.active .tab,
+#tab3.active .tab,
+#tab4.active .tab {
+	color: black;
+}
+
+.tabContent > div {
+	display: none;
+	position: absolute;
+	opacity: 0;
+	padding: 2.5rem;
+}
+
+/*.section .tabContent > div:first-child {
+	display: flex;
+	flex-direction: column;
+	opacity: 1;
+}*/
+
+/*#tab1.active a,
+#tab2.active a,
+#tab3.active a,
+#tab4.active a {
+	color: black;
+}*/
+
+/*
+#tab1.active ~ .tabContent > #tab1Content,
+#tab2.active ~ .tabContent > #tab2Content,
+#tab3.active ~ .tabContent > #tab3Content,
+#tab4.active ~ .tabContent > #tab4Content {
+	display: block;
+	position: absolute;
+	opacity: 1;
+	padding: 2.5rem;
+}
+*/
+#tab3.active ~ .tabContent > #tab3Content .tabContent__item > img {
+	width: 50%;
+  margin-left: 20%;
+}
+
+/****************************************************************/
+
+#tab1--skew:checked ~ .tabContent > #tab1Content--skew,
+#tab2--skew:checked ~ .tabContent > #tab2Content--skew,
+#tab3--skew:checked ~ .tabContent > #tab3Content--skew,
+#tab4--skew:checked ~ .tabContent > #tab4Content--skew {
+	position: relative;
+	display: block;
+	opacity: 1;
+	padding: 2.5rem;
+}
+
+#tab3--skew:checked ~ .tabContent > #tab3Content--skew .tabContent__item > img {
+	width: 50%;
+  margin-left: 20%;
+}
+
+input[name="tab--skew"] + label > .tab__border-bottom {
+	background: #808080a1;
+	border: 0;
+  height: 0.35rem;
+}
+
+input[name="tab--skew"]:checked + label {
+	color: #177D9A;
+  border-color: #177D9A;
+}
+
+input[name="tab--skew"]:checked + label > .tab__border-bottom {
+	background: #18AFC7;
+	border: 0;
+  height: 0.35rem;
+}
+
+#tab1--skew:checked + label:hover,
+#tab2--skew:checked + label:hover,
+#tab3--skew:checked + label:hover,
+#tab4--skew:checked + label:hover {
+	opacity: 1;
+}
+
+/****************************************************************/
+
+#tab1--underline:checked ~ .tabContent > #tab1Content--underline,
+#tab2--underline:checked ~ .tabContent > #tab2Content--underline,
+#tab3--underline:checked ~ .tabContent > #tab3Content--underline,
+#tab4--underline:checked ~ .tabContent > #tab4Content--underline {
+	position: relative;
+	display: block;
+	opacity: 1;
+	padding: 2.5rem;
+}
+
+#tab3--underline:checked ~ .tabContent > #tab3Content--underline .tabContent__item > img {
+	width: 50%;
+  margin-left: 20%;
+}
+
+input[name="tab--underline"] + label > .tab__border-bottom {
+	background: #808080a1;
+	border: 0;
+  height: 0.35rem;
+}
+
+input[name="tab--underline"]:checked + label {
+	color: black;
+}
+
+input[name="tab--underline"]:checked + label > .tab__border-bottom {
+	background: #18AFC7;
+	border: 0;
+  height: 0.35rem;
+}
+
+#tab1--underline:checked + label:hover,
+#tab2--underline:checked + label:hover,
+#tab3--underline:checked + label:hover,
+#tab4--underline:checked + label:hover {
+	opacity: 1;
+}

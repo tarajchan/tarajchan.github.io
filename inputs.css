@@ -1,0 +1,11 @@
+.input--text {
+  color: #ffffff73;
+  width: 55%;
+  height: 50%;
+  background: transparent;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-bottom: 0.05rem solid #ffffff73;
+  font-family: "Inconsolata Regular";
+  outline: none;
+}

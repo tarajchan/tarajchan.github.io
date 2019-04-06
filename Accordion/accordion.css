@@ -1,0 +1,177 @@
+@import "../Fonts/fonts.css";
+
+.accordion {
+	max-width: 60rem;
+}
+
+.accordion__item {
+	position: relative;
+}
+
+.accordion__panel {
+	display: flex;
+	flex-direction: row;
+	max-height: 0;
+	border-right: 0.05rem solid black;
+	border-left: 0.05rem solid black;
+	opacity: 0;
+	-webkit-transition: 0.25s all ease-in-out;
+	-moz-transition: 0.25s all ease-in-out;
+	-ms-transition: 0.25s all ease-in-out;
+	-o-transition: 0.25s all ease-in-out;
+	transition: 0.25s all ease-in-out;
+}
+
+.accordion__panel * {
+	transition: 0.25s opacity ease-in-out;
+}
+
+.accordion__panel > .accordion__panel-item:nth-child(2) {
+	padding-left: 1.5rem;
+}
+
+.accordion__panel--black {
+	background: black;
+	color: white;
+}
+
+.accordion__panel--black .accordion__panel-header {
+	color: #18AFC7;
+}
+
+.accordion__panel-header {
+	font-family: "Playfair Display Bold";
+  font-size: 1.85rem;
+  line-height: 2rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.accordion__panel-item {
+	flex: 1;
+	font-family: "Roboto Light";
+	font-size: 1.15rem;
+	line-height: 1.618rem;
+}
+
+.accordion__panel-item img {
+	width: 100%;
+	height: auto;
+}
+
+.accordion__panel-text {
+	line-height: 1.85rem;
+}
+
+.accordion__title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-family: "Playfair Display Regular";
+	font-size: 1.35rem;
+	line-height: 1.618rem;
+	padding: 1.25rem 2rem;
+	background: black;
+	border-bottom: 0.05rem groove white;
+	color: white;
+	-webkit-transition: 0.25s ease-in-out;
+	-moz-transition: 0.25s ease-in-out;
+	-ms-transition: 0.25s ease-in-out;
+	-o-transition: 0.25s ease-in-out;
+	transition: 0.25s ease-in-out;
+}
+
+.accordion__title:hover {
+	cursor: pointer;
+	background: #4a4a4a;
+}
+
+.accordion__title.active {
+	background: #4a4a4a;
+}
+
+.accordion__title.active + .accordion__panel {
+	max-height: 60rem;
+	padding: 2.5rem 1rem;
+	opacity: 1;
+}
+
+.accordion__title.active + .accordion__panel * {
+	opacity: 1;
+}
+
+.accordion__title--white--borderless {
+	background: white;
+	color: black;
+}
+
+.accordion__title--white--borderless:hover,
+.accordion__title--white--borderless.active {
+	background: white;
+	box-shadow: inset -0.25rem -0.25rem 0.25rem #F1F1F0, inset 0.25rem 0.25rem 0.75rem #f1f1f1;
+}
+
+.accordion__title--white--borderless .arrow.left {
+	border-color: #0000002e;
+}
+
+.accordion__title--white--borderless + .accordion__panel {
+	border: 0;
+}
+
+.accordion__title-text {
+	margin-right: 1.5rem;
+}
+/*
+.accordion input[type="checkbox"] {
+	-webkit-appearance: none;
+	position: absolute;
+	height: 100%;
+  width: 100%;
+	opacity: 0;
+  margin: 0;
+  max-height: 4.25rem;
+  z-index: 1;
+}
+
+.accordion input[type="checkbox"]:hover {
+	cursor: pointer;
+}
+
+.accordion input[type="checkbox"]:hover + .accordion__title {
+	background: #000000b3;
+}
+
+.accordion input[type="checkbox"]:hover + .accordion__title--white--borderless {
+	background: #0000001a;
+}
+
+/*
+.accordion input[type="checkbox"]:checked + .accordion__title + .accordion__panel {
+	max-height: 18rem;
+	padding: 2.5rem 6rem;
+	opacity: 1;
+}
+
+.accordion input[type="checkbox"]:checked + .accordion__title  + .accordion__panel * {
+	opacity: 1;
+}
+
+.accordion input[type="checkbox"]:checked + .accordion__title  + .accordion__panel  {
+	height: 100%;
+}
+
+.accordion input[type="checkbox"]:checked + .accordion__title {
+	border-bottom: 0.25rem solid #18AFC7;
+}
+
+.accordion input[type="checkbox"]:checked + .accordion__title > .arrow.left {
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.accordion input[type="checkbox"]:checked + .accordion__title > .icon__wrapper--circle {
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+*/

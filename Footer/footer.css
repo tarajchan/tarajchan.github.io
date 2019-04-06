@@ -1,0 +1,80 @@
+@import "../fonts.css";
+
+/*******************GENERAL LAYOUT MODS*****************/
+
+.section__title {
+  border-bottom: none;
+  display: flex;
+  justify-content: center;
+}
+
+/*******************FOOTER*****************/
+
+.footer__body {
+  display: flex;
+  width: 100%;
+}
+
+.footer__section {
+  flex: 1;
+  padding: 1.5rem;
+  color: white;
+  font-family: "Inconsolata Regular";
+}
+
+.footer__section.description {
+  background: linear-gradient(to left, black, #18524a, #18524a);
+  border-right: 0.05rem dashed white;
+  border-bottom: 0.05rem solid white;
+}
+
+.footer__section.description .footer__label {
+  font-family: "Libre Franklin Extra Light";
+}
+
+.footer__label span:first-child {
+  display: inline-block;
+  margin: 0.5rem 0;  
+}
+
+.footer__section.description > *:not(.footer__title) {
+  padding-left: 0.5rem;
+}
+
+.footer__section.details {
+  background: linear-gradient(to left, #808080a1, #808080a1, black);
+  border-top: 0.05rem solid white;
+}
+
+.footer__title {
+  display: flex;
+}
+
+.footer__title span {
+  font-family: "Libre Franklin Extra Light";
+  display: inline-block;
+  font-size: 2.25rem;
+}
+
+.footer__media {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: "Inconsolata Regular";
+  margin-top: 2rem;
+}
+
+.footer__media a {
+  cursor: pointer;
+}
+
+.footer__email {
+  margin-top: 1rem;
+  text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+  .footer__body {
+    flex-direction: column;
+  }
+}
