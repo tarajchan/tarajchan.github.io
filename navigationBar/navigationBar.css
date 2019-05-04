@@ -1,5 +1,6 @@
-@import url('../animations.css');
-@import url('../../Intro-to-Responsive-Design/fonts.css');
+@import "inputs.css";
+@import "../animations.css";
+@import "../Fonts/fonts.css";
 
 a {
   text-decoration: none;
@@ -14,7 +15,6 @@ a:visited {
   display: flex;
   flex-direction: row;
   color: white;
-  font-family: "Inconsolata Regular";
   justify-content: space-between;
   margin: 0;
 }
@@ -40,7 +40,6 @@ a:visited {
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  /*left: 8rem;*/
   top: 50%;
   transform: translateY(-50%);
   width: 90%;
@@ -246,7 +245,7 @@ a:visited {
   width: 100%;
   padding: 0.35rem 1rem;
   text-align: center;
-  font-family: "Dosis Extra Light";
+  font-family: "Barlow Condensed Thin";
   transform: skewX(0deg);
   transition: background-color 0.25s ease-in-out;
 }
@@ -298,7 +297,7 @@ a:visited {
   top: 4rem;
   transform: translateX(0);
   width: 0;
-  font-family: "Inconsolata Regular";
+  font-family: "Barlow Condensed Thin";
 }
 
 .navigationBar__menu--mobile .navigationBar__directory__menu {
@@ -378,7 +377,6 @@ a:visited {
   .navigationBar__submenu {
     position: absolute;
     top: 100%;
-    left: -73%;
     background: black;
     max-height: 0;
     width: 11rem;

@@ -1,4 +1,4 @@
-@import "../fonts.css";
+@import "../Fonts/fonts.css";
 
 /*******************GENERAL LAYOUT MODS*****************/
 
@@ -19,7 +19,6 @@
   flex: 1;
   padding: 1.5rem;
   color: white;
-  font-family: "Inconsolata Regular";
 }
 
 .footer__section.description {
@@ -29,12 +28,12 @@
 }
 
 .footer__section.description .footer__label {
-  font-family: "Libre Franklin Extra Light";
+  font-family: "Roboto Light";
 }
 
 .footer__label span:first-child {
   display: inline-block;
-  margin: 0.5rem 0;  
+  margin: 0.5rem 0;
 }
 
 .footer__section.description > *:not(.footer__title) {
@@ -44,6 +43,7 @@
 .footer__section.details {
   background: linear-gradient(to left, #808080a1, #808080a1, black);
   border-top: 0.05rem solid white;
+  font-family: "Roboto Light";
 }
 
 .footer__title {
@@ -51,7 +51,7 @@
 }
 
 .footer__title span {
-  font-family: "Libre Franklin Extra Light";
+  font-family: "Barlow Condensed Regular";
   display: inline-block;
   font-size: 2.25rem;
 }
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  font-family: "Inconsolata Regular";
+  font-family: "Barlow Condensed Regular";
   margin-top: 2rem;
 }
 

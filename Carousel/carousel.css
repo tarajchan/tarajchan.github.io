@@ -1,3 +1,5 @@
+@import "../Fonts/fonts--main.css";
+
 input[name="carousel-radio"]  {
   display: none;
 }
@@ -72,7 +74,7 @@ h1 {
 
 .carousel__items .carousel__item .carousel__item-title {
   position: relative;
-  font-family: "Inconsolata Regular";
+  font-family: "Roboto Light";
   color: white;
   font-size: 2rem;
   text-align: center;
@@ -80,17 +82,14 @@ h1 {
 }
 
 .carousel__items .carousel__item:nth-of-type(1) {
-  background-image: url("https://images.unsplash.com/photo-1504703500545-4c4ee081b155?ixlib=rb-0.3.5&s=efd0741ba6a8691e02e39a2de1f7cb17&auto=format&fit=crop&w=1050&q=80");
   transform: translateX(0%);
 }
 
 .carousel__items .carousel__item:nth-of-type(2) {
-  background-image: url("https://images.unsplash.com/reserve/Hxev8VTsTuOJ27thHQdK_DSC_0068.JPG?ixlib=rb-0.3.5&s=7cbe7a38fa72deeef209d50f5d52d571&auto=format&fit=crop&w=1047&q=80");
   transform: translateX(100%);
 }
 
 .carousel__items .carousel__item:nth-of-type(3) {
-  background-image: url("https://images.unsplash.com/photo-1499428665502-503f6c608263?ixlib=rb-0.3.5&s=65ad43b134b770fa3b0f784b58c76dbb&auto=format&fit=crop&w=1500&q=80");
   transform: translateX(200%);
 }
 
@@ -124,40 +123,3 @@ h1 {
   width: 100%;
   margin: 4rem auto 3rem;
 }
-/*
-#carousel__radio-1:checked ~ .carousel__controls:nth-of-type(1) {
-  display: block;
-}
-
-#carousel__radio-1:checked ~ .carousel__items {
-  transform: translateX(0%);
-}
-
-#carousel__radio-2:checked ~ .carousel__controls:nth-of-type(2) {
-  display: block;
-}
-
-#carousel__radio-2:checked ~ .carousel__items {
-  transform: translateX(-100%);
-}
-
-#carousel__radio-3:checked ~ .carousel__controls:nth-of-type(3) {
-  display: block;
-}
-
-#carousel__radio-3:checked ~ .carousel__items {
-  transform: translateX(-200%);
-}
-
-#carousel__radio-1:checked ~ .carousel__navigation--bottom .carousel__navigation:nth-of-type(1) {
-  opacity: 1;
-}
-
-#carousel__radio-2:checked ~ .carousel__navigation--bottom .carousel__navigation:nth-of-type(2) {
-  opacity: 1;
-}
-
-#carousel__radio-3:checked ~ .carousel__navigation--bottom .carousel__navigation:nth-of-type(3) {
-  opacity: 1;
-}
-*/

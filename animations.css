@@ -1,0 +1,45 @@
+@keyframes slideDown {
+  0% {
+    top: -180%;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  85% {
+    opacity: .5;
+  }
+  100% {
+    top: 116%;
+    height: auto;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    left: 0%;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  85% {
+    opacity: .5;
+  }
+  100% {
+    left: 100.5%;
+    height: auto;
+  }
+}

@@ -1,5 +1,4 @@
-@import "../base.css";
-@import "../fonts.css";
+@import "../Fonts/fonts.css";
 
 .chartContainer {
   margin-top: 1rem;
@@ -54,7 +53,7 @@
 
 .chart__title {
   color: white;
-  font-family: "Inconsolata Regular";
+  font-family: "Barlow Condensed Regular";
   font-size: 1.5rem;
   text-align: center;
   margin-bottom: 1rem;
