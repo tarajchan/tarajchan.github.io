@@ -1,4 +1,4 @@
-@import "../Fonts/fonts--main.css";
+@import "../Fonts/fonts.css";
 
 .accordion {
 	max-width: 60rem;
@@ -67,7 +67,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	font-family: "Playfair Display Regular";
+	font-family: "Barlow Condensed Regular";
 	font-size: 1.35rem;
 	line-height: 1.618rem;
 	padding: 1.25rem 2rem;

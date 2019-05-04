@@ -23,16 +23,6 @@
   src: url("Barlow_Condensed/Barlow_Condensed/BarlowCondensed-SemiBold.ttf") format("truetype");
 }
 
-/*@font-face {
-  font-family: "Dosis Extra Light";
-  src: url("Dosis/Dosis-ExtraLight.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Dosis Regular";
-  src: url("Dosis/Dosis-Regular.ttf") format("truetype");
-}*/
-
 @font-face {
   font-family: "Assistant Bold";
   src: url("Assistant/Assistant-Bold.ttf") format("truetype");
